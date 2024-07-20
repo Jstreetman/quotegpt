@@ -24,7 +24,9 @@ export function SignUp() {
               <div className="flex items-center">
                 <Label htmlFor="password">Password</Label>
               </div>
-              <Input id="password" type="password" required />
+              <Input
+              placeholder="Password..."
+              id="password" type="password" required />
             </div>
             <Button type="submit" className="w-full">
               Submit

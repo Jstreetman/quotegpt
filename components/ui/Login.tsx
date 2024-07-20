@@ -12,7 +12,7 @@ export function Login() {
           <div className="grid gap-2 text-center">
             <h1 className="text-3xl font-bold">Sign In</h1>
             <p className="text-balance text-muted-foreground">
-              Enter your email below to login to your account
+              Enter your email below to sign in
             </p>
           </div>
           <div className="grid gap-4">
@@ -24,7 +24,9 @@ export function Login() {
               <div className="flex items-center">
                 <Label htmlFor="password">Password</Label>
               </div>
-              <Input id="password" type="password" required />
+              <Input
+              placeholder="Password..."
+               id="password" type="password" required />
             </div>
             <Button type="submit" className="w-full">
               Login
