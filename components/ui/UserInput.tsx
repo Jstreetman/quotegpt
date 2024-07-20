@@ -7,8 +7,8 @@ export function UserInput() {
     useChat();
   // messages -> [user asks a question, gpt-4 response, user asks again, gpt-4 responds]
 
-  console.log(messages);
-  console.log(input);
+  console.log("messages", messages);
+  console.log("input",input);
 
   return (
     <div className="grid w-full gap-2">
@@ -18,7 +18,7 @@ export function UserInput() {
           value={input}
           onChange={handleInputChange}
         />
-        <Button>Send message</Button>
+        <Button className="mt-2">Send message</Button>
       </form>
     </div>
   );
